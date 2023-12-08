@@ -1,0 +1,37 @@
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: changeBox;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changeBox {
+    0% { 
+        transform: translate(0, 0);
+        background-color: red;
+    }
+
+    25% {
+        transform: translate(0, 250px);
+        background-color: blue;
+    }
+
+    50% {
+        transform: translate(250px, 250px);
+        background-color: green;
+    }
+
+    75% {
+        transform: translate(250px, 0);
+        background-color: yellow;
+    }
+
+    100% {
+        transform: 0, 0;
+        border-color: red;
+    }
+}
